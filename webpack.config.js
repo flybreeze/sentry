@@ -237,12 +237,6 @@ const appConfig = {
       flattening: true, // used by a dependency of react-mentions
       shorthands: true,
     }),
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      'window.jQuery': 'jquery',
-      'root.jQuery': 'jquery',
-    }),
     new ExtractTextPlugin(),
     new webpack.DefinePlugin({
       'process.env': {
